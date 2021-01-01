@@ -156,6 +156,7 @@ class PfEd(object):
             lss = list()
             for (sn, total) in lookup_subtables:
                 lss.append((sn, anchors[:total]))
+                anchors = anchors[:total]
 
             GPOS.append((ln, lss))
 
